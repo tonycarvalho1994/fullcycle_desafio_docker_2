@@ -11,8 +11,10 @@ RUN apt-get update \
 
 COPY . .
 
+RUN npm install
+
 RUN chmod +x start.sh
 
 EXPOSE 3000
 
-ENTRYPOINT ["start.sh"]
+ENTRYPOINT ["./start.sh"]

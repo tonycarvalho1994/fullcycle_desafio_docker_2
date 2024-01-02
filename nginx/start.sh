@@ -1,5 +1,5 @@
 #!/bin/sh
-dockerize -wait tcp://node_server:3000 -timeout 25s
+dockerize -wait tcp://node_server:3000 -timeout 35s
 
 ./docker-entrypoint.sh 
 

@@ -5,10 +5,8 @@ services:
   node_server:
     build:
       context: node
-    volumes:
-      - ./node:/usr/src/app
     container_name: node_server
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 30s
     command: npm start
     networks:
       - nodenet
