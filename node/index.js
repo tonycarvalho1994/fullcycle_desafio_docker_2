@@ -21,7 +21,7 @@ function insertRandomName(connection) {
 
 
 app.get('/', (req, res) => {
-    let output = '<h1>FullCycle Rocks! \\m/</h1><br/><h2>Nomes na tabela: </h2>'
+    let output = '<h1>FullCycle Rocks hehehe! \\m/</h1><br/><h2>Nomes na tabela: </h2>'
 
     const connection = mysql2.createConnection(config);
     
